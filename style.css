@@ -1,0 +1,142 @@
+:root {
+    --blue: #1877F2;
+    --light-blue: #4A90E2;
+    --white: #E4E6EB;
+    --bg-dark: #18191A;
+    --bg-light: #242526;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    --light-color: #B0BEC5;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(135deg, #1C1C1E, #57575d);
+    color: var(--white);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+
+.content .box {
+    width: 500px;
+    background-color: var(--bg-light);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.div1 {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.div2 {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    position: relative;
+}
+
+.no-messages {
+    text-align: center;
+    color: var(--light-color);
+    font-style: italic;
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.sms1, .sms2 {
+    max-width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.sms1 {
+    align-self: flex-end;
+    background: linear-gradient(135deg, var(--blue), var(--light-blue));
+    color: var(--white);
+    border-radius: 15px 15px 0 15px;
+}
+
+.sms2 {
+    align-self: flex-start;
+    background: #3A3B3C;
+    color: var(--white);
+    border-radius: 15px 15px 15px 0;
+}
+
+#sendBtn, #clearBtn {
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+#sendBtn:hover, #clearBtn:hover {
+    background: var(--light-blue);
+}
+
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #a3a3a3;
+    margin-right: 10px;
+    font-size: 14px;
+    background: #3A3B3C;
+    color: var(--white);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .content .box {
+        width: 90%;
+    }
+}
+
+textarea {
+    width: calc(100% - 100px);
+    padding: 15px 15px 0px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--white);
+    margin-right: 10px;
+    resize: none;
+}
+
+.div3 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}

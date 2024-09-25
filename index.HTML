@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>BASIC CHAT</title>
+    </head>
+    <body>
+        <div class="content">
+            <div class="box">
+                <div class="div1">
+                    <div>
+                        <h4>BASIC CHAT</h4>
+                        <p>Trocas de mensagens</p>
+                    </div>
+                    <div>
+                        <select name="user" id="userSelect">
+                            <option value="User1">User1</option>
+                            <option value="User2">User2</option>
+                        </select>
+                        <button id="clearBtn">Apagar Tudo</button>
+                    </div>
+                </div>
+
+                <div class="div2" id="messageContainer"></div>
+                <div class="no-messages">
+                    <p>Sem mensagem registrada!</p>
+                </div>
+                
+                <div class="div3">
+                    <textarea id="messageInput" placeholder="Insira sua mensagem aquí" required></textarea>
+                    <button id="sendBtn">ENVIAR</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
